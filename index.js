@@ -46,7 +46,8 @@ Use the copy function below to do the following:
 */
 
 function copy(originalFlavors){
-    return originalFlavors.map();
+    let flavors = originalFlavors.slice();
+    return flavors;
 }    
 
 
@@ -63,8 +64,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(originalFlavors){
+   if (originalFlavors.length === 31){
+       return true;
+   } else if (originalFlavors.length !== 31){
+       return false;
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
